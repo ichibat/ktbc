@@ -15,7 +15,7 @@ const app = express();
 
 //test page
 app.get('/', (req,res) => {
-  res.send("hello Express!!!!!");
+  res.send("hello Express!!!");
 });
 
 //Port setting
