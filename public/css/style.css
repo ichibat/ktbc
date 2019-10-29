@@ -1,0 +1,15 @@
+.logo {
+  width: 130px;
+  margin: auto;
+}
+
+/* Basic */
+.b-fluid {
+  width: 100%;
+}
+
+/* Project */
+
+.p-basicPatientInformation {
+  width: 20%;
+}
