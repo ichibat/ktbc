@@ -61,4 +61,6 @@ const ScoreSchema = new Schema({
   }
 });
 
+
+
 mongoose.model("scores", ScoreSchema);
