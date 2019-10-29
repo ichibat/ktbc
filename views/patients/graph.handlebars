@@ -1,13 +1,13 @@
 <div class="container">
   <div class="field">
-    <label for="karteNo" class="label">カルテ番号(英数字のみ入力可能)
-    </label>
-    <div class="control">
-      <input class="input" type="text" id="karteNo" value="{{patient.karteNumber}}" name="karteNumber" required>
-    </div>
-  </div>
+    <p>カルテ番号: {{patient.karteNumber}}</p>
+      <p>評価日:　{{patient.dateScored}}</p>
+    <p>患者さんイニシャル: {{patient.firstNameInitial}}.{{patient.lastNameInitial}}</p>
+    
+  
 <canvas id="myChart" width="800" height="400"></canvas>
 </div>
+
 <script>
 
   var ctx = document.getElementById("myChart");
