@@ -6,8 +6,7 @@ const { ensureAuthenticated } = require("../../helpers/auth");
 //Load Models
 require("../../models/Patient");
 const Patient = mongoose.model("patients");
-// require("../../models/Score");
-// const Score = mongoose.model("scores");
+
 
 //Patients index page
 router.get("/", ensureAuthenticated, (req, res) => {
