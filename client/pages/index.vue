@@ -12,7 +12,20 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head(){
+    return {
+      title: 'About The App',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'KTバランスチャートスタート'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style></style>
