@@ -43,6 +43,7 @@
     </v-app-bar>
     <v-content>
       <v-container>
+        <AppHeader />
         <nuxt />
       </v-container>
     </v-content>
@@ -65,7 +66,11 @@
 </template>
 
 <script>
+import AppHeader from '../components/AppHeader'
 export default {
+  components: {
+    AppHeader
+  },
   data() {
     return {
       clipped: false,
