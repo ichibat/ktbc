@@ -1,26 +1,12 @@
 <template>
-  <v-app dark>
-    <ServiceHeader />
-    <v-content>
-      <v-container>
-        <nuxt />
-      </v-container>
-    </v-content>
-    <ServiceDrawer />
-    <ServiceFooter />
-  </v-app>
+  <v-footer :fixed="fixed" app>
+    <span>&copy; 2019</span>
+  </v-footer>
 </template>
 
 <script>
-import ServiceHeader from '../components/ServiceHeader'
-import ServiceFooter from '../components/ServiceFooter'
-import ServiceDrawer from '../components/ServiceDrawer'
 export default {
-  components: {
-    ServiceHeader,
-    ServiceFooter,
-    ServiceDrawer
-  },
+  name: 'ServiceFooter',
   data() {
     return {
       clipped: false,
@@ -46,4 +32,5 @@ export default {
   }
 }
 </script>
+
 <style></style>

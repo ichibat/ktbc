@@ -1,26 +1,23 @@
 <template>
-  <v-app dark>
-    <ServiceHeader />
-    <v-content>
-      <v-container>
-        <nuxt />
-      </v-container>
-    </v-content>
-    <ServiceDrawer />
-    <ServiceFooter />
-  </v-app>
+  <div>
+    <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
+      <v-list>
+        <v-list-item @click.native="right = !right">
+          <v-list-item-action>
+            <v-icon light>
+              mdi-repeat
+            </v-icon>
+          </v-list-item-action>
+          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+  </div>
 </template>
 
 <script>
-import ServiceHeader from '../components/ServiceHeader'
-import ServiceFooter from '../components/ServiceFooter'
-import ServiceDrawer from '../components/ServiceDrawer'
 export default {
-  components: {
-    ServiceHeader,
-    ServiceFooter,
-    ServiceDrawer
-  },
+  name: 'ServiceDrawer',
   data() {
     return {
       clipped: false,
@@ -46,4 +43,5 @@ export default {
   }
 }
 </script>
+
 <style></style>
