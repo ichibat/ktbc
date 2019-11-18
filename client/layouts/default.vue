@@ -1,7 +1,7 @@
 <template>
   <v-app dark>
+    <!-- <ServiceDrawer /> -->
     <ServiceHeader />
-    <ServiceDrawer />
     <v-content>
       <v-container>
         <nuxt />
@@ -14,12 +14,12 @@
 <script>
 import ServiceHeader from '../components/ServiceHeader'
 import ServiceFooter from '../components/ServiceFooter'
-import ServiceDrawer from '../components/ServiceDrawer'
+// import ServiceDrawer from '../components/ServiceDrawer'
 export default {
   components: {
     ServiceHeader,
-    ServiceFooter,
-    ServiceDrawer
+    ServiceFooter
+    // ServiceDrawer
   },
   data() {
     return {
