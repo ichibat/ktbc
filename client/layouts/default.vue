@@ -1,12 +1,12 @@
 <template>
   <v-app dark>
     <ServiceHeader />
+    <ServiceDrawer />
     <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
-    <ServiceDrawer />
     <ServiceFooter />
   </v-app>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <img alt="KT法" />
-    <p>ユーザーログイン</p>
+    <p class="display-1">ユーザーログイン</p>
     <form method="post" action="/users/login">
       <div class="field">
         <label for="email">Eメール</label>
