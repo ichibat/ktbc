@@ -59,7 +59,7 @@ export default {
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-anchor',
           title: 'Inspire',
           to: '/inspire'
         }
