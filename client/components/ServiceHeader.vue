@@ -67,6 +67,11 @@ export default {
           icon: 'mdi-account',
           title: 'ユーザー登録',
           to: '/users/register'
+        },
+        {
+          icon: 'mdi-login',
+          title: 'ユーザーログイン',
+          to: '/users/login'
         }
       ],
       miniVariant: false,
