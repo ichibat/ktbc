@@ -55,13 +55,13 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
+          title: 'ようこそ',
           to: '/'
         },
         {
           icon: 'mdi-anchor',
-          title: 'Inspire',
-          to: '/inspire'
+          title: 'このサイトに関して',
+          to: '/about'
         }
       ],
       miniVariant: false,
