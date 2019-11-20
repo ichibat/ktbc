@@ -62,6 +62,11 @@ export default {
           icon: 'mdi-anchor',
           title: 'このサイトに関して',
           to: '/about'
+        },
+        {
+          icon: 'mdi-account',
+          title: 'ユーザー登録',
+          to: '/users/register'
         }
       ],
       miniVariant: false,
