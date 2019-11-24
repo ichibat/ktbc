@@ -1,8 +1,40 @@
 <template>
   <div>
+    <v-form v-model="valid">
+      <v-container>
+        <v-row>
+          <v-col cols="12" md="4">
+            <v-text-field
+              v-model="kartenumber"
+              :rules="emailRules"
+              label="カルテ番号"
+              required
+            ></v-text-field>
+          </v-col>
+          <v-col cols="12" md="3">
+            <v-text-field
+              v-model="lastname"
+              :rules="nameRules"
+              :counter="1"
+              label="姓イニシャル"
+              required
+            ></v-text-field>
+          </v-col>
+          <v-col cols="12" md="3">
+            <v-text-field
+              v-model="firstname"
+              :rules="nameRules"
+              :counter="1"
+              label="名イニシャル"
+              required
+            ></v-text-field>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-form>
     <v-container fluid>
       <v-row align="center">
-        <v-col cols="6">
+        <v-col cols="10">
           <v-select
             :items="items1"
             item-text="question"
