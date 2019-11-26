@@ -139,6 +139,9 @@
             return-object
             single-line
           ></v-select>
+          <div class="my-2">
+            <v-btn outlined large>入力とグラフ化</v-btn>
+          </div>
         </v-col>
       </v-row>
     </v-container>
