@@ -1,16 +1,17 @@
-<template>
 <H1 class="is-size-3">患者さん一覧</H1>
-<p>{{#each patients}}</p>
-<div>
-  <p>{{karteNumber}}</p>
-  <p>名前．苗字のイニシャル：{{firstNameInitial}}．{{lastNameInitial}}</p>
-  <div>
-    <a href="/patients/edit/{{id}}">編集</a>
+{{#each patients}}
+<div class="card card-content">
+  <p class="title is -4">{{karteNumber}}</p>
+  <p class="subtitle is-5">名前．苗字のイニシャル：{{firstNameInitial}}．{{lastNameInitial}}</p>
+  <div class="columns">
+    <a class="button is-primary" href="/patients/edit/{{id}}">編集</a>
     <form action="/patients/{{id}}?_method=DELETE" method="post">
       <input type="hidden" name="_method" value="DELETE">
       <input type="submit" class="button is-danger" value="削除">
     </form>
   </div>
 </div>
+
+{{else}}
 <p>患者さんは登録されていません</p>
-</template>
+{{/each}}
