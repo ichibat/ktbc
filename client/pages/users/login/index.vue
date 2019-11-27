@@ -34,7 +34,7 @@
               <v-card-text>
                 <v-form>
                   <v-text-field
-                    label="Login"
+                    label="メールアドレス"
                     name="login"
                     prepend-icon="person"
                     type="text"
@@ -42,7 +42,7 @@
 
                   <v-text-field
                     id="password"
-                    label="Password"
+                    label="パスワード"
                     name="password"
                     prepend-icon="lock"
                     type="password"
