@@ -10,10 +10,15 @@
       md6
     >
       <div class="text-center">
+        <PostService />
         <logo />
         <vuetify-logo />
       </div>
       <v-card>
+        <p>
+          こんにちは．
+        </p>
+
         <v-card-title class="headline">
           Welcome to the Vuetify + Nuxt.js template
         </v-card-title>
@@ -82,11 +87,13 @@
 <script>
 import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import PostService from '~/components/PostComponent.vue'
 
 export default {
   components: {
     Logo,
-    VuetifyLogo
+    VuetifyLogo,
+    PostService
   }
 }
 </script>
