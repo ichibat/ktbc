@@ -16,7 +16,7 @@
       </div>
       <v-card>
         <p>
-          こんにちは．
+          こんにちは
         </p>
 
         <v-card-title class="headline">
