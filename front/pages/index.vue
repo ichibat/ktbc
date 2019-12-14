@@ -14,6 +14,7 @@
         <logo />
         <vuetify-logo />
       </div>
+      <p>ここから</p>
       <v-card>
         <p>
           こんにちは
@@ -97,3 +98,7 @@ export default {
   }
 }
 </script>
+<style scoped>
+.text-center {
+}
+</style>
