@@ -6,7 +6,7 @@
         frontline
       </h1>
       <h2 class="subtitle">
-        axios test
+        axios test started
       </h2>
       <div class="links">
         <a
@@ -29,13 +29,65 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Logo from '~/components/Logo.vue';
+
+import axios from "axios";
+import Joke from '../../components/Joke'
+import SearchJokes from '../../components/SearchJokes'
 
 export default {
   components: {
-    Logo
+    Joke,
+    SearchJokes
+  },
+  data() {
+    return {
+      jokes: []
+    }
+  },
+  async created() {
+    const config = {
+      headers: {
+        'Accept': 'application/json'
+      }
+      }
+
+      try {
+          const res = await axios.get('https://icanhazdadjoke.com/search', config);
+          this.jokes = res.data.results;
+      } catch (error) {
+        console.log(err)
+      }
+  },
+  methods: {
+    async searchText(text){
+      const config = {
+      headers: {
+        'Accept': 'application/json'
+      }
+      }
+
+      try {
+          const res = await axios.get(`https://icanhazdadjoke.com/search?term=${text}`, config);
+          this.jokes = res.data.results;
+      } catch (error) {
+        console.log(err)
+      }
+    }
+  },
+  head(){
+    return {
+      title: 'Dad Jokes',
+      meta: [
+        {
+        hid: 'description',
+        name: 'description',
+        content: 'Best place for corny dad jokes'
+        }
+      ]
+    }
   }
-}
+};
 </script>
 
 <style>
