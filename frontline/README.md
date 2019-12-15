@@ -1,6 +1,6 @@
 # frontline
 
-> 
+> My stylish Nuxt.js project
 
 ## Build Setup
 
