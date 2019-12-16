@@ -1,6 +1,6 @@
 # front
 
-> My majestic Nuxt.js project
+> My mathematical Nuxt.js project
 
 ## Build Setup
 
