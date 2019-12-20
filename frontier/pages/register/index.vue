@@ -1,9 +1,11 @@
 <template>
   <div class = "l-container">
     <p>ユーザー登録</p>
+    <input v-model="name" placeholder="名前:">
     <input v-model="karteNumber" placeholder="カルテ番号:">
     <input v-model="lastNameInitial" placeholder="姓のイニシャル:">
     <input v-model="firstNameInitial" placeholder="名のイニシャル:">
+<p>ユーザーの名前は: {{ name }}</p>    
 <p>カルテ番号は: {{ karteNumber }}</p>
 <p>姓のイニシャル: {{ lastNameInitial }}</p>
 <p>名のイニシャル: {{ firstNameInitial }}</p>
@@ -14,6 +16,7 @@
 export default {
   data() {
     return {
+      name: '',
       karteNumber: '',
       lastNameInitial: '',
       firstNameInitial: ''
