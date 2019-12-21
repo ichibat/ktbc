@@ -1,6 +1,6 @@
 <template>
   <div class = "l-container">
-    <p>ユーザー登録</p>
+    <p class="has-text-primary">ユーザー登録</p>
     <input class = "c-input" v-model="name" placeholder="名前:">
     <input class = "c-input" v-model="karteNumber" placeholder="カルテ番号:">
     <input class = "c-input" v-model="lastNameInitial" placeholder="姓のイニシャル:">
