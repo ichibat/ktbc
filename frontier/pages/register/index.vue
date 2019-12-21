@@ -1,10 +1,10 @@
 <template>
   <div class = "l-container">
     <p>ユーザー登録</p>
-    <input v-model="name" placeholder="名前:">
-    <input v-model="karteNumber" placeholder="カルテ番号:">
-    <input v-model="lastNameInitial" placeholder="姓のイニシャル:">
-    <input v-model="firstNameInitial" placeholder="名のイニシャル:">
+    <input class = "c-input" v-model="name" placeholder="名前:">
+    <input class = "c-input" v-model="karteNumber" placeholder="カルテ番号:">
+    <input class = "c-input" v-model="lastNameInitial" placeholder="姓のイニシャル:">
+    <input class = "c-input" v-model="firstNameInitial" placeholder="名のイニシャル:">
 <p>ユーザーの名前は: {{ name }}</p>    
 <p>カルテ番号は: {{ karteNumber }}</p>
 <p>姓のイニシャル: {{ lastNameInitial }}</p>
@@ -31,5 +31,8 @@ export default {
   margin: auto;
   width: 80%;
   padding: 10px;
+}
+.c-input {
+  display: block
 }
 </style>
