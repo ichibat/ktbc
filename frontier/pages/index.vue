@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <logo />
-      <h1 class="title">
+      <h1 class="title has-text-primary">
         frontier
       </h1>
       <h2 class="subtitle">
@@ -30,10 +30,12 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import PostComponent from '~/components/PostComponent.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    PostComponent
   }
 }
 </script>
