@@ -1,4 +1,5 @@
-import axios from "axios";
+import axios from axios; 
+
 const mongoose = require("mongoose");
 
 //Connect to mongoose
@@ -11,3 +12,13 @@ mongoose
   .catch(err => {
     console.log(err);
   });
+
+class PostService {
+  // Get Posts
+
+
+  // Create Post
+  
+
+  // Delete Post
+}
